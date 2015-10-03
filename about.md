@@ -1,14 +1,14 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Hossain Mohd Faysal
-tags: [Hossain, Mohd, Faysal, hmfaysal]
-imagefeature: fourseasons.jpg
+title: Hoony, Jang
+tags: [hoony, jang, civic hacker, thechunsik]
+imagefeature: "hoony.jpg"
 chart: true
 ---
 <figure>
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
-  <figcaption>Hossain Mohammad Faysal</figcaption>
+  <img src="{{ site.url }}/images/hoony.jpg" alt="Hoony, Jang">
+  <figcaption>Hoony, Jang</figcaption>
 </figure>
 
 {% assign total_words = 0 %}
@@ -17,18 +17,95 @@ chart: true
 {% assign statuscount = 0 %}
 
 {% for post in site.posts %}
-    {% assign post_words = post.content | strip_html | number_of_words %}
-    {% assign readtime = post_words | append: '.0' | divided_by:200 %}
-    {% assign total_words = total_words | plus: post_words %}
-    {% assign total_readtime = total_readtime | plus: readtime %}
-    {% if post.featured %}
-    {% assign featuredcount = featuredcount | plus: 1 %}
-    {% endif %}
+  {% assign post_words = post.content | strip_html | number_of_words %}
+  {% assign readtime = post_words | append: '.0' | divided_by:200 %}
+  {% assign total_words = total_words | plus: post_words %}
+  {% assign total_readtime = total_readtime | plus: readtime %}
+  {% if post.featured %}
+  {% assign featuredcount = featuredcount | plus: 1 %}
+  {% endif %}
 {% endfor %}
 
 
-My name is **Hossain Mohd. Faysal**, and this is my personal blog. It currently has {{ site.posts | size }} posts in {{ site.categories | size }} categories which combinedly have {{ total_words }} words, which will take an average reader ({{ site.wpm }} WPM) approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
+## Skills
+- **Full-Stack Web Programming**
+  - **Front-End**: Angular.js(Intermediate), React.js(Beginner), HTML5/CSS3(Intermediate)
+  - **Back-End**: Node.js(Express)
+- **Data Wrangling**(Beginner): Python
 
+## Projects
+
+#### **[wheredoesmymoneygo.kr](http://wheredoesmymoneygo.kr)** - Data Wrangling, Front-End Programming
+- forked from [wheredoesmymoneygo.org](http://wheredoesmymoneygo.org/)
+- developed with a designer, alice([Three Cicles](http://twitter.com/yeyeon91))
+- visualization for how our governments are spending our money(tax)
+- [source code](https://github.com/codeforseoul/wheredoesmymoneygo.kr)
+
+#### **[getoutofdebt.kr](http://getoutofdebt.kr)** - Data Scraping, Wrangling, Front-End Programming(using MongoDB)
+- developed at a [hackathon for transparency](http://transparency.codenamu.org/) hosted by [Code for Seoul](http://codeforseoul.org/)
+- developed with a designer at [Slowalk]()
+- visualization for how our governments are in depts
+- source code
+  - [homepage](https://github.com/codeforseoul/getoutofdebt.kr)
+  - [scraping code](https://github.com/codeforseoul/getoutofdebt.kr-scraper)
+
+#### **ethics.newstapa.org(not released)** - Front-End Programming, Visualization, with Newstapa
+- developed to disclose public officials’ assets with Newstapa
+
+#### **[noondo.kr](https://noondo.kr)** - Full-Stack Enginneering
+- Angular.js, Semantic-UI, Parse
+- crowd funding platform to create a customized bus route
+- [source code](https://github.com/open-transit/noondo.kr)
+
+## Experience
+
+#### SK Communications, Seoul - Marketing Intern
+- *Jan,  2012 - Feb,  2012*
+- ‘Dream Project’ to make people’s dreams true
+- business model in Nate/Cyworld
+
+#### Second Commercial, Seoul - Intern
+- *Sep, 2012 - Mar,  2013*
+- mobile AD platform with a gamification system in mobile games
+
+#### Creative Commons Korea, Seoul - Community Organizer, Web Programmer
+- *Mar, 2014 - Feb, 2015*
+- community organizing(creative commons korea community)
+- global conference organizing(2014 creative commons korea global conference)
+- web programming
+- open (government) data consulting
+
+#### Open Transit, Seoul - Co-Founder, Full-Stack Programmer
+- *May, 2015 - Oct, 2015*
+- developed a service named, ‘눈뜨면도착'
+- crowd funding platform to create a customized bus route for people using public transportation regularly such as students or company employees
+
+#### Mozilla Korea Community, Seoul - Mozillian(Volunteer)
+- *May,  2013 - PRESENT*
+- translation works(Mozilla Hacks Blog)
+
+#### Code for Seoul, Seoul - Organizer, Full-Stack Programmer
+- *May,  2014 - PRESENT*
+- community organizing
+- project managing, full-stack programming
+
+#### Creative Commons Korea, Seoul - Volunteer
+- *Dec,  2011 - PRESENT*
+
+
+
+## Speaks
+- **[Open Government Data Updates from around the World](https://pad.okfn.org/p/Open_Government_Data_updates_from_around_the_world)** - [Open Knowledge Festival 2014 ](http://2014.okfestival.org/)
+- **[‘오픈데이터를 넘어(Beyond Opendata)’](http://sehub.blog.me/220055137876)** - Digital Society Innovation
+- **[Hacking the Cities with Technology](http://2014con.cckorea.org/program/3/hacking-the-city-with-technology/)** - [Creative Commons Korea Global Conference](http://2014con.cckorea.org/)
+
+## Articles
+
+- **[[씨유피플] 정지훈 “혁신이 기득권 허문다”](http://www.bloter.net/archives/112928)** - [Bloter.net](http://www.bloter.net/)
+- **[세금 감시, 시민 힘으로 ‘코딩’해요]()** - [Bloter.net](http://www.bloter.net/)
+- **[GPL·AGPL·MPL…한눈에 보는 오픈소스SW 라이선스]()** - [Bloter.net](http://www.bloter.net/)
+
+<!--
 I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UPENN**. I am licensed as a Professional Engineer (P.E) to practice in the states of Texas, Massachusetts and California. I double majored in EECS and Mathematics during my undergraduate life at [MIT](http://www.mit.edu/), and currently focusing on Electrical Engineering for my post-graduate studies.
 
 *[ESE]: Electrical and Systems Engineering
@@ -37,10 +114,12 @@ I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UP
 *[EECS]: Electrical and Computer Engineering
 *[UPENN]: University of Pennsylvania
 
+
 <figure>
 	<img src="{{ site.url }}/images/Hossain-Mohd-Faysal.jpg" alt="Hossain Mohammad Faysal">
 	<figcaption>At Bates Linear Accelerator Center</figcaption>
 </figure>
+
 
 I was born and brought up in Doha. Yes, its a desert peninsula, yes we have camels and falcons and all the other Middle Eastern traits/stereotypes you can think of.
 
@@ -65,10 +144,10 @@ At some point in the not-terribly-distant future, I hope to found a self-sustain
 Anyways, for now I'm just working toward changing the face of Electrical Engineering forever. Not that I necessarily expect to succeed, but it's something to strive for, and it's a fun problem to work on.
 
 
-Entrepreneur  
-Designer  
-***Engineer***  
-Inventor  
+Entrepreneur
+Designer
+***Engineer***
+Inventor
 
 I
 make
@@ -91,8 +170,9 @@ Tools for the creative space — the 53 centimeters that magically link head, he
 
 
 For
-the makers,  
-the creators,  
-the discoverers,  
-the original thinkers,  
+the makers,
+the creators,
+the discoverers,
+the original thinkers,
 ***This is the space to create.***
+-->

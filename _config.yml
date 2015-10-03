@@ -1,30 +1,30 @@
-title:            Notepad
-description:      "Free, Hack, City"
-logo:             logo.png
-disqus_shortname: jarvis_opentransit
+title:            "Hoony, Jang"
+description:      "We're all civic hackers."
+logo:             "logo.jpg"
+disqus_shortname: "chunsik"
 share:            true
-dropcap:			true
+dropcap:          true
 # Change url to your domain. Leave localhost server or blank when working locally.
 # or use the hint from http://jekyllrb.com/docs/github-pages/ to keep this the same
 # whether working locally or remotely. Start Jekyll with: jekyll serve --baseurl ''
-url:        	  http://chunsik.org
+url:              "http://localhost:4000"
 
 # Owner/author information
 owner:
-  name:           Hoony, Jang(Jarvis)
-  avatar:         hmfaysal.jpg
-  email:          jarvis@opentransit.co
+  name:           "Hoony, Jang"
+  avatar:         "hoony.jpg"
+  email:          "thechunsik@gmail.com"
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
-  description:    Civic Hacker
+  description:    "Civic Hacker, Love to fix whatever broken in our city."
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        thechunsik
-  facebook:       thechunsik
-  github:         thechunsik
+  twitter:        "thechunsik"
+  facebook:       "thechunsik"
+  github:         "thechunsik"
   # For Google Authorship https://plus.google.com/authorship
   # google_plus:    https://plus.google.com/u/0/102602916593522619858
 
 # Analytics and webmaster tools stuff goes here
-# google_analytics:   UA-39365944-7
+google_analytics:   "UA-68402445-1"
 google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:
@@ -36,8 +36,8 @@ links:
     url: /
     external: false
     icon: home
-  - title: Featured Posts
-    url: /featured
+  # - title: Featured Posts
+  #   url: /featured
   - title: Categories
     url: /categories
   - title: About
@@ -112,8 +112,8 @@ prose:
           placeholder: "Choose categories"
           value: personal
           options:
-            - name: "Personal"
-              value: personal
+            - name: "춘식이의 코드이야기"
+              value: "춘식이의 코드이야기"
             - name: "Engineering"
               value: engineering
             - name: "Physics"
