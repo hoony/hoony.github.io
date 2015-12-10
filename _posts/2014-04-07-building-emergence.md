@@ -31,7 +31,7 @@ featured: true
 
 ‘Brigade’ 네트워크에는 주로 미국 내 도시들 – Code for ‘도시’ -과 해외 여러 국가들의 그룹이 가입되어 있는데 그 중 필라델피아에서 가입된 그룹이 바로 Code for Philly입니다. Code for Philly는 기본적으로 개방적인 프로젝트 중심으로 만들어진 그룹입니다. 필라델피아 시민이면 누구나 프로젝트를 생성하고 관리하고 참여하기 쉽도록 홈페이지가 구축되어 있고 홈페이지 자체는 들어가보시면 쉽게 알 수 있듯이 ‘기술을 통해 더 살기 좋은 필라델피아를 만들자’라는 슬로건을 가지면서 프로젝트 생성/참여/편집이 간편하고 자유로우며 프로젝트의 기반이 되는 언어 및 플랫폼이 무엇인지, 프로젝트의 주제가 무엇인지에 따라 쉽게 분류되어 있어요. 코드나무 뿐만 아니라 씨씨코리아의 프로젝트 관리 도구로써 도입하기에도 너무 좋은 구조를 가지고 있었죠! 알고보니 Code for Philly 팀에서 직접 만든 오픈소스 [Emergence](http://emr.ge/)와 [Laddr](https://github.com/CfABrigadePhiladelphia/laddr) 프로젝트를 통해 구축된 것이였습니다.
 
-{% include image.html url="http://chunsik.org/images/posts/test.png" description="" %}
+{% include image.html url="http://hoony.github.io/images/posts/test.png" description="" %}
 
 이렇게 좋은 도구를 보고 그냥 지나칠 순 없었기 때문에 Code for Philly 트위터로 연락을 취해보았죠! 그랬더니 CodeforPhilly 팀 계정을 통해 곧바로 CTO, Chris Alfano의 이메일을 알아낼 수 있었고 이로부터 약 2주동안 이메일을 주고받으면서 Chris Alfano로부터 Emergence를 설치/운용하는데 필요한 가이드 뿐만 아니라 그 외의 여러가지 정보들을 알 수 있었습니다(공개된지 얼마 안된 오픈소스라서 미완성된 가이드 문서만 보고 설치하고 테스트해보기에는 저로서는 너무 힘들었기 떄문에…..ㅜㅜ..사실은 개인적인 생각으로 천재 해커들은 성격도 좋지 못하고 가이드 문서화도 게으르다(?)라는 편견을 가지고 있었기에 Chris Alfano와의 커뮤니케이션에 자신도 없는 상태였죠.)
 

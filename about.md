@@ -28,10 +28,8 @@ chart: true
 
 
 ## Skills
-- **Full-Stack Web Programming**
-  - **Front-End**: Angular.js(Intermediate), React.js(Beginner), HTML5/CSS3(Intermediate)
-  - **Back-End**: Node.js(Express)
-- **Data Wrangling**(Beginner): Python
+- **Full Stack Programming**
+- **Languages**: Node.js, Python
 
 ## Projects
 
@@ -56,6 +54,14 @@ chart: true
 - Angular.js, Semantic-UI, Parse
 - crowd funding platform to create a customized bus route
 - [source code](https://github.com/open-transit/noondo.kr)
+
+#### **[Congress Report](https://github.com/codeforseoul/congress-report-web)** - Project Leading, Full-Stack Programming
+- Python
+- mailing service to help citizen monitor their congress man
+- source code
+  - [Web Page](https://github.com/codeforseoul/congress-report-web)
+  - [Crawler](https://github.com/codeforseoul/congress-report)
+  - [Mailer](https://github.com/codeforseoul/congress-report-mailer) 
 
 ## Experience
 
