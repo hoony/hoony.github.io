@@ -10,7 +10,7 @@ tags: "스크레이핑, 자바스크립트, scraping, request, cheerio, javascri
 imagefeature: ""
 mathjax: false
 featured: false
-comments: false
+comments: true
 title: "[춘식이의 코드이야기] 10분만에 따라하는 웹사이트 긁어오기"
 ---
 
