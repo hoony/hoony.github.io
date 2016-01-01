@@ -1,12 +1,12 @@
 ---
 layout: post
-published: false
+published: true
 description: ""
 headline: ""
 modified: "2014-11-13"
 categories: 
   - 춘식이의 코드이야기
-tags: "크롤링, 스크레이핑"
+tags: "스크레이핑, 자바스크립트, scraping, request, cheerio, javascript"
 imagefeature: ""
 mathjax: false
 featured: false
@@ -29,11 +29,10 @@ title: "[춘식이의 코드이야기] 10분만에 따라하는 웹사이트 긁
 
 `request`에 필요한 요소는 내가 데이터를 가져오고자 하는 웹사이트의 URL 주소이다. 그래서 `url` 변수에 “http://codenamu.org/blog” 주소를 담았다. `request` 함수의 기본 사용 방법은 다음과 같다.
 
-```javascript
-request(URL, function (err, response, html) {
-    // URL로부터 가져온 페이지 소스가 html이란 변수에 담긴다.
-})
-```
+<code>
+request(URL, function (err, response, html) {});
+</code>
+
 이렇게 가져온 소스코드를 `cheerio`를 이용해서 주로 `jQuery` 변수에 사용하는 `$`에 담는다.
 
 ## 블로그 제목 가져오기
@@ -55,20 +54,13 @@ request(URL, function (err, response, html) {
 
 자 이제 제목을 가져와보자. `cheerio`를 이용해서 웹사이트 HTML을 변수 `$`에 담았었다. 이제 원하는 제목 정보가 담긴 태그(`'.entry-title > a'`)를 변수 `$`를 이용해서 검색한다. 검색된 데이터를 변수 data에 담은 뒤 (`data = $(this);`) 제목(`data.text()`)과 포스트 주소(`data.attr('href')`)를 처리한다.
 
-```javascript
-//원하는 태그를 이용해서 데이터를 가져오는데 데이터가 여러 개일 경우 .each 등을 이용하여 반복해서 가져오게 된다.
-$('원하는 태그').each(function () {
-
-})
-```
+<code>
+$('원하는 태그').each(function () {})
+</code>
 
 ## 나머지 요약 정보와 카테고리 가져오기
 
 <iframe src="http://jsfiddle.net/thechunsik/tdz8ukdg/4/embedded/" allowfullscreen="allowfullscreen" frameborder="0" height="600" width="100%"></iframe>
 이어서 제목과 카테고리 정보를 가져왔다.
 
-같은 방식으로 요약정보도 가져와보자. 요약 정보가 담긴 태그는 '.entry-summary > p'이다. 다음은 카테고리를 가져올 차례인데 카테고리는 이전 두 요소와는 다르게 한 포스트에 여러 개가 포함돼 있다. 이것을 해결해보자. 우선 모든 카테고리를 둘러싸고 있는 '.entry-categories' 태그를 가진 span 데이터를 불러온다. 그 다음 똑같은 방식으로 span 내에 포함된 모든 카테고리 요소: 카테고리1, 카테고리2를 반복문을 활용해서 다음과 같이 불러온다.
-
-
-
-
+같은 방식으로 요약정보도 가져와보자. 요약 정보가 담긴 태그는 `.entry-summary > p`이다. 다음은 카테고리를 가져올 차례인데 카테고리는 이전 두 요소와는 다르게 한 포스트에 여러 개가 포함돼 있다. 이것을 해결해보자. 우선 모든 카테고리를 둘러싸고 있는 `.entry-categories` 태그를 가진 `span` 데이터를 불러온다. 그 다음 똑같은 방식으로 span 내에 포함된 모든 카테고리 요소: 카테고리1, 카테고리2를 반복문을 활용해서 다음과 같이 불러온다.

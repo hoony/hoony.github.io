@@ -1,10 +1,13 @@
 <footer class="notepad-site-footer">
     <div class="copyright">
-         <section><a href="{{ site.url }}/about">{{ site.owner.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; Some rights reserved. &bull; CC BY</section>
-         <section>Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a></section>
+        <section>
+            <a href="{{ site.url }}/about">{{ site.owner.name }}</a> &copy; {{ site.time | date: '%Y' }} &bull; Some rights reserved. &bull; CC BY
+        </section>
+         <section>
+             Proudly published with <a class="icon-ghost" href="https://jekyllrb.com/">Jekyll</a>
+         </section>
     </div>
     <div class="social-icons">
-
         {% if site.owner.twitter %}
         <a href="http://twitter.com/{{ site.owner.twitter }}">
             <span class="fa-stack fa-lg">
@@ -46,6 +49,9 @@
         </a>
         {% endif %}
     </div>
-
-    <div class="cf"></div>
+    <div class="supporters">
+        <a href="http://www.fsf.org/associate/support_freedom/join_fsf?referrer=2442">
+            <img src="//static.fsf.org/fsforg/img/thin-image.png" alt="Support freedom" title="Help protect your freedom, join the Free Software Foundation" />
+        </a>
+    </div>
 </footer>
